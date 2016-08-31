@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Circle" max_length="40" name="x_ocios_holacron_circle" type="collection">
+        <element label="Glassfrog ID" max_length="40" name="glassfrog_id" type="string"/>
+        <element label="Name" max_length="255" name="name" type="string"/>
+        <element label="Strategy" max_length="1024" name="strategy" type="string"/>
+        <element label="Total Allocation" max_length="15" name="total_allocation" type="decimal"/>
+    </element>
+</database>

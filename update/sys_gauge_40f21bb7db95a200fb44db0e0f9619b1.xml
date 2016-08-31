@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_gauge">
+    <sys_gauge action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <aggregate>COUNT</aggregate>
+        <attributes/>
+        <fieldname/>
+        <group_field/>
+        <lower_limit/>
+        <name>Roles by Circle</name>
+        <order/>
+        <other_threshold>-2</other_threshold>
+        <parent/>
+        <query/>
+        <report display_value="Roles by Circle">9cce4b77db95a200fb44db0e0f96196e</report>
+        <roles/>
+        <stack_field/>
+        <sys_class_name>sys_gauge</sys_class_name>
+        <sys_created_by>alexia.salone@watech.wa.gov</sys_created_by>
+        <sys_created_on>2016-08-24 20:08:50</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>40f21bb7db95a200fb44db0e0f9619b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Roles by Circle</sys_name>
+        <sys_package display_value="Holacracy" source="x_ocios_holacron">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Holacracy">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_scope>
+        <sys_update_name>sys_gauge_40f21bb7db95a200fb44db0e0f9619b1</sys_update_name>
+        <sys_updated_by>alexia.salone@watech.wa.gov</sys_updated_by>
+        <sys_updated_on>2016-08-24 20:08:50</sys_updated_on>
+        <tablename>x_ocios_holacron_role</tablename>
+        <title>Roles by Circle</title>
+        <type>report</type>
+        <upper_limit/>
+        <url/>
+        <view/>
+    </sys_gauge>
+</record_update>

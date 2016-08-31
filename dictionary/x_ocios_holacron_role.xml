@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=true" label="Role" max_length="40" name="x_ocios_holacron_role" type="collection">
+        <element label="Circle" max_length="32" name="circle" reference="x_ocios_holacron_circle" type="reference"/>
+        <element label="Elected Until" max_length="40" name="elected_until" type="string"/>
+        <element default="1" label="Expected Allocation" max_length="15" name="expected_allocation" type="decimal"/>
+        <element label="Glassfrog ID" max_length="40" name="glassfrog_id" type="string"/>
+        <element display="true" label="Name" max_length="255" name="name" type="string"/>
+        <element label="Purpose" max_length="1024" name="purpose" type="string"/>
+        <index name="index">
+            <element name="circle"/>
+        </index>
+    </element>
+</database>

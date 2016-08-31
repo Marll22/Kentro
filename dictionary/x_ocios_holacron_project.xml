@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Project" max_length="40" name="x_ocios_holacron_project" type="collection">
+        <element label="Elected Until" max_length="40" name="elected_until" type="glide_date"/>
+        <element label="Glassfrog ID" max_length="40" name="glassfrog_id" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Checklist Item" max_length="40" name="x_ocios_holacron_checklist_item" type="collection">
+        <element label="Description" max_length="255" name="description" type="string"/>
+        <element label="Frequency" max_length="40" name="frequency" type="string"/>
+        <element label="Glassfrog ID" max_length="40" name="glassfrog_id" type="integer"/>
+        <element label="Global" max_length="1" name="global" type="boolean"/>
+        <element label="Link" max_length="255" name="link" type="url"/>
+    </element>
+</database>

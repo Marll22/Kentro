@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Changes bad entries to 5s !</description>
+        <field>expected_allocation</field>
+        <global>true</global>
+        <messages/>
+        <name>Expected Allocation Fix</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   var minStep = 0.05;
+   if (isLoading || newValue === '' || isEvenlyDivisible(newValue, minStep)) {
+      return;
+   }
+
+   //INAPPROPRIATE COMMENT HERE
+   g_form.setValue("expected_allocation", roundUp(newValue));
+}
+
+function isEvenlyDivisible(value, step) {
+	return roundUp(value) - value < 0.005;
+}
+
+function roundUp(value) {
+	return (Math.ceil(value*20)/20).toFixed(2);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>alexia.salone@watech.wa.gov</sys_created_by>
+        <sys_created_on>2016-08-24 22:13:58</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b3ae2773dbd5a200fb44db0e0f9619e9</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Expected Allocation Fix</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Holacracy" source="x_ocios_holacron">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Holacracy">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_scope>
+        <sys_update_name>sys_script_client_b3ae2773dbd5a200fb44db0e0f9619e9</sys_update_name>
+        <sys_updated_by>justinb</sys_updated_by>
+        <sys_updated_on>2016-08-25 02:47:00</sys_updated_on>
+        <table>x_ocios_holacron_role</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

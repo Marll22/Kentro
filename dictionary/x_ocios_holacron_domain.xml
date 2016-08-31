@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Domain" max_length="40" name="x_ocios_holacron_domain" type="collection">
+        <element label="Description" max_length="1024" name="description" type="string"/>
+        <element label="Glassfrog ID" max_length="40" name="glassfrog_id" type="integer"/>
+    </element>
+</database>

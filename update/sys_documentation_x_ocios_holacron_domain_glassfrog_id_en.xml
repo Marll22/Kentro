@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="glassfrog_id" label="Glassfrog ID" language="en" table="x_ocios_holacron_domain">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>glassfrog_id</element>
+            <help/>
+            <hint/>
+            <label>Glassfrog ID</label>
+            <language>en</language>
+            <name>x_ocios_holacron_domain</name>
+            <plural>Glassfrog IDs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-08-31 21:04:25</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>eec2ab424f61220079d73fb28110c78b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Glassfrog ID</sys_name>
+            <sys_package display_value="Global" source="global">global</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Holacracy">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_scope>
+            <sys_update_name>sys_documentation_x_ocios_holacron_domain_glassfrog_id_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-08-31 21:04:25</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

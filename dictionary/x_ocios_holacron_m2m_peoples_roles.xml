@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Holacron M2m Peoples Roles" max_length="40" name="x_ocios_holacron_m2m_peoples_roles" type="collection">
+        <element display="true" label="Actual Allocation" max_length="3" name="actual_allocation" type="integer"/>
+        <element label="People" max_length="32" name="people" reference="x_ocios_holacron_people" type="reference"/>
+        <element label="Role" max_length="32" name="role" reference="x_ocios_holacron_role" type="reference"/>
+        <index name="index">
+            <element name="role"/>
+        </index>
+        <index name="index2">
+            <element name="people"/>
+        </index>
+    </element>
+</database>

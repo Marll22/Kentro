@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="740e26ac6f6a5200dc7c034abb3ee415" sys_domain="global" table="x_ocios_holacron_circle" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>glassfrog_id</element>
+            <position>0</position>
+            <sys_created_by>alexia.salone@watech.wa.gov</sys_created_by>
+            <sys_created_on>2016-08-23 19:10:16</sys_created_on>
+            <sys_id>54fbb523db11a2001ce275131f961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_ocios_holacron_circle" sys_domain="global" view="Default view">740e26ac6f6a5200dc7c034abb3ee415</sys_ui_section>
+            <sys_updated_by>alexia.salone@watech.wa.gov</sys_updated_by>
+            <sys_updated_on>2016-08-23 19:10:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>1</position>
+            <sys_created_by>alexia.salone@watech.wa.gov</sys_created_by>
+            <sys_created_on>2016-08-23 19:10:16</sys_created_on>
+            <sys_id>94fbb523db11a2001ce275131f961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_ocios_holacron_circle" sys_domain="global" view="Default view">740e26ac6f6a5200dc7c034abb3ee415</sys_ui_section>
+            <sys_updated_by>alexia.salone@watech.wa.gov</sys_updated_by>
+            <sys_updated_on>2016-08-23 19:10:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>strategy</element>
+            <position>2</position>
+            <sys_created_by>alexia.salone@watech.wa.gov</sys_created_by>
+            <sys_created_on>2016-08-23 19:10:16</sys_created_on>
+            <sys_id>d4fbb523db11a2001ce275131f961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_ocios_holacron_circle" sys_domain="global" view="Default view">740e26ac6f6a5200dc7c034abb3ee415</sys_ui_section>
+            <sys_updated_by>alexia.salone@watech.wa.gov</sys_updated_by>
+            <sys_updated_on>2016-08-23 19:10:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>12M.x_ocios_holacron_circle.x_ocios_holacron_role.circle</element>
+            <position>3</position>
+            <sys_created_by>alexia.salone@watech.wa.gov</sys_created_by>
+            <sys_created_on>2016-08-23 19:10:16</sys_created_on>
+            <sys_id>18fbb523db11a2001ce275131f961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_ocios_holacron_circle" sys_domain="global" view="Default view">740e26ac6f6a5200dc7c034abb3ee415</sys_ui_section>
+            <sys_updated_by>alexia.salone@watech.wa.gov</sys_updated_by>
+            <sys_updated_on>2016-08-23 19:10:16</sys_updated_on>
+            <sys_user/>
+            <type>list</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_allocation</element>
+            <position>4</position>
+            <sys_created_by>justinb</sys_created_by>
+            <sys_created_on>2016-08-24 21:30:52</sys_created_on>
+            <sys_id>adb5237fdb95a200fb44db0e0f96190a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_ocios_holacron_circle" sys_domain="global" view="Default view">740e26ac6f6a5200dc7c034abb3ee415</sys_ui_section>
+            <sys_updated_by>justinb</sys_updated_by>
+            <sys_updated_on>2016-08-24 21:30:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_ocios_holacron_circle</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>justinb</sys_created_by>
+            <sys_created_on>2016-03-30 22:14:36</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>740e26ac6f6a5200dc7c034abb3ee415</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_ocios_holacron_circle</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Holacracy" source="x_ocios_holacron">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Holacracy">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_scope>
+            <sys_update_name>sys_ui_section_740e26ac6f6a5200dc7c034abb3ee415</sys_update_name>
+            <sys_updated_by>justinb</sys_updated_by>
+            <sys_updated_on>2016-03-30 22:14:36</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

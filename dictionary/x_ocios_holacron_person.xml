@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Person" max_length="40" name="x_ocios_holacron_person" type="collection"/>
+</database>
