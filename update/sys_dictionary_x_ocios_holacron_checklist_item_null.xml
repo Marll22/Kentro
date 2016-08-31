@@ -46,17 +46,17 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>justinb</sys_created_by>
         <sys_created_on>2016-01-31 22:31:34</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>8e1cf26d6f1d9200dc7c034abb3ee4aa</sys_id>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>30fe27864f61220079d73fb28110c7a2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_ocios_holacron_checklist_item</sys_name>
         <sys_package display_value="Holacracy" source="x_ocios_holacron">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Holacracy">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_scope>
-        <sys_update_name>sys_dictionary_x_ocios_holacron_checklist_item_null</sys_update_name>
-        <sys_updated_by>justinb</sys_updated_by>
-        <sys_updated_on>2016-01-31 22:31:34</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_ocios_holacron_checklist_item_NULL</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2016-08-31 21:57:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

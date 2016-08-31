@@ -25,7 +25,7 @@
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>alexia.salone@watech.wa.gov</sys_created_by>
             <sys_created_on>2016-08-17 22:54:05</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>90a5f3eddbd122001ce275131f9619e0</sys_id>

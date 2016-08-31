@@ -65,7 +65,7 @@
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>justinb</sys_created_by>
             <sys_created_on>2016-02-01 02:14:54</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>bd3fa3e16f5d9200dc7c034abb3ee4ce</sys_id>

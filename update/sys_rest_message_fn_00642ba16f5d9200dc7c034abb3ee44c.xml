@@ -15,7 +15,7 @@
         <sys_class_name>sys_rest_message_fn</sys_class_name>
         <sys_created_by>justinb</sys_created_by>
         <sys_created_on>2016-02-01 01:27:33</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>00642ba16f5d9200dc7c034abb3ee44c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>delete</sys_name>

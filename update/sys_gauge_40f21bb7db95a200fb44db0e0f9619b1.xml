@@ -18,7 +18,7 @@
         <sys_class_name>sys_gauge</sys_class_name>
         <sys_created_by>alexia.salone@watech.wa.gov</sys_created_by>
         <sys_created_on>2016-08-24 20:08:50</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>40f21bb7db95a200fb44db0e0f9619b1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Roles by Circle</sys_name>

@@ -4,7 +4,7 @@
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>justinb</sys_created_by>
         <sys_created_on>2016-01-31 22:46:53</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a29fb6ad6f1d9200dc7c034abb3ee4c8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_ocios_holacron_role.x_ocios_holacron.user</sys_name>
