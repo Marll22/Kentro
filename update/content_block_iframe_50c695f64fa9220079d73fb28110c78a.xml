@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="content_block_iframe">
+    <content_block_iframe action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <condition/>
+        <conditional>false</conditional>
+        <frame/>
+        <frame_name>Roles</frame_name>
+        <height>600</height>
+        <logged_on>false</logged_on>
+        <name>roleslist</name>
+        <sizing>expand</sizing>
+        <sys_class_name>content_block_iframe</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-09-02 18:48:44</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>50c695f64fa9220079d73fb28110c78a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>roleslist</sys_name>
+        <sys_package display_value="Holacracy" source="x_ocios_holacron">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Holacracy">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_scope>
+        <sys_update_name>content_block_iframe_50c695f64fa9220079d73fb28110c78a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-09-02 18:48:44</sys_updated_on>
+        <url>https://dev26736.service-now.com/x_ocios_holacron_role_list.do</url>
+        <width>400</width>
+    </content_block_iframe>
+</record_update>

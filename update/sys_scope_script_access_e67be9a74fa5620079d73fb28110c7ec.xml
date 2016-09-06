@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_scope_script_access">
+    <sys_scope_script_access action="INSERT_OR_UPDATE">
+        <example_stack_trace>API_INT-thread-32
+	com.glide.sys.fencing.dependency.ScopeAccessProvider$ScopeAccessCache.getCurrentStackTrace(ScopeAccessProvider.java:234)
+	com.glide.sys.fencing.dependency.ScopeAccessProvider$ScopeAccessCache.record(ScopeAccessProvider.java:202)
+	com.glide.sys.fencing.dependency.ScopeAccessProvider$ScopeAccessCache.access$100(ScopeAccessProvider.java:81)
+	com.glide.sys.fencing.dependency.ScopeAccessProvider.recordAccess(ScopeAccessProvider.java:64)
+	com.glide.sys.fencing.dependency.ScopeAccessRecorder.record(ScopeAccessRecorder.java:13)
+	com.glide.script.system.ASystemInclude.recordCrossScopeDependency(ASystemInclude.java:153)
+	com.glide.script.system.ASystemInclude.include(ASystemInclude.java:133)
+	com.glide.script.AGlideRhinoScopeHandler.isScriptInclude(AGlideRhinoScopeHandler.java:45)
+	com.glide.script.GlideRhinoScopeHandler.found(GlideRhinoScopeHandler.java:27)
+	com.glide.script.ARhinoScope.get(ARhinoScope.java:77)
+	com.glide.script.RhinoScope.get(RhinoScope.java:52)
+	com.glide.script.PackageRhinoGlobalScope.get(PackageRhinoGlobalScope.java:34)
+	com.glide.script.PackageParent.isObjectInGlobal(PackageParent.java:50)
+	com.glide.script.PackageParent.get(PackageParent.java:31)
+	org.mozilla.javascript.ScriptableObject.getProperty(ScriptableObject.java:2323)
+	org.mozilla.javascript.ScriptRuntime.topScopeName(ScriptRuntime.java:1871)
+	org.mozilla.javascript.ScriptRuntime.nameOrFunction(ScriptRuntime.java:1838)
+	org.mozilla.javascript.ScriptRuntime.name(ScriptRuntime.java:1780)
+	org.mozilla.javascript.gen.sys_ws_operation_3368eda74fa5620079d73fb28110c737_3032._c_anonymous_2(sys_ws_operation.3368eda74fa5620079d73fb28110c737:8)
+	org.mozilla.javascript.gen.sys_ws_operation_3368eda74fa5620079d73fb28110c737_3032.call(sys_ws_operation.3368eda74fa5620079d73fb28110c737)
+	org.mozilla.javascript.ScriptRuntime.doCall2(ScriptRuntime.java:2645)
+	org.mozilla.javascript.ScriptRuntime.doCall(ScriptRuntime.java:2582)
+	org.mozilla.javascript.optimizer.OptRuntime.call0(OptRuntime.java:23)
+	org.mozilla.javascript.gen.sys_ws_operation_3368eda74fa5620079d73fb28110c737_3032._c_process_1(sys_ws_operation.3368eda74fa5620079d73fb28110c737:7)
+	org.mozilla.javascript.gen.sys_ws_operation_3368eda74fa5620079d73fb28110c737_3032.call(sys_ws_operation.3368eda74fa5620079d73fb28110c737)
+	org.mozilla.javascript.ScriptRuntime.doCall2(ScriptRuntime.java:2645)
+	org.mozilla.javascript.ScriptRuntime.doCall(ScriptRuntime.java:2582)
+	org.mozilla.javascript.optimizer.OptRuntime.call2(OptRuntime.java:42)
+	org.mozilla.javascript.gen.sys_ws_operation_3368eda74fa5620079d73fb28110c737_3032._c_script_0(sys_ws_operation.3368eda74fa5620079d73fb28110c737:1)
+	org.mozilla.javascript.gen.sys_ws_operation_3368eda74fa5620079d73fb28110c737_3032.call(sys_ws_operation.3368eda74fa5620079d73fb28110c737)
+	org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:560)
+	org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:3439)
+	org.mozilla.javascript.gen.sys_ws_operation_3368eda74fa5620079d73fb28110c737_3032.call(sys_ws_operation.3368eda74fa5620079d73fb28110c737)
+	org.mozilla.javascript.gen.sys_ws_operation_3368eda74fa5620079d73fb28110c737_3032.exec(sys_ws_operation.3368eda74fa5620079d73fb28110c737)
+	com.glide.script.ScriptEvaluator.execute(ScriptEvaluator.java:236)
+	com.glide.script.ScriptEvaluator.evaluateString(ScriptEvaluator.java:107)
+	com.glide.script.ScriptEvaluator.evaluateString(ScriptEvaluator.java:73)
+	com.glide.script.fencing.GlideScopedEvaluator.evaluateScript(GlideScopedEvaluator.java:322)
+	com.glide.script.fencing.GlideScopedEvaluator.evaluateScript(GlideScopedEvaluator.java:283)
+	com.glide.script.fencing.GlideScopedEvaluator.evaluateScript(GlideScopedEvaluator.java:254)
+	com.glide.script.fencing.GlideScopedEvaluator.evaluateScript(GlideScopedEvaluator.java:242)
+	com.glide.rest.service.custom.CustomService.runScript(CustomService.java:95)
+	com.glide.rest.service.custom.CustomService.execute(CustomService.java:82)
+	com.glide.rest.handler.impl.ServiceHandlerImpl.invokeService(ServiceHandlerImpl.java:36)
+	com.glide.rest.processors.RESTAPIProcessor.process(RESTAPIProcessor.java:228)
+	com.glide.processors.AProcessor.runProcessor(AProcessor.java:412)
+	com.glide.processors.AProcessor.processTransaction(AProcessor.java:187)
+	com.glide.processors.ProcessorRegistry.process(ProcessorRegistry.java:165)
+	com.glide.ui.GlideServletTransaction.process(GlideServletTransaction.java:49)
+	com.glide.sys.ServletTransaction.run(ServletTransaction.java:34)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	java.lang.Thread.run(Thread.java:745)
+</example_stack_trace>
+        <script_name>SnowLib</script_name>
+        <source_scope display_value="Holacracy">f4db3e2d6f1d9200dc7c034abb3ee49c</source_scope>
+        <sys_class_name>sys_scope_script_access</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-09-05 04:14:02</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>e67be9a74fa5620079d73fb28110c7ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SnowLib</sys_name>
+        <sys_package display_value="Holacracy" source="x_ocios_holacron">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Holacracy">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_scope>
+        <sys_update_name>sys_scope_script_access_e67be9a74fa5620079d73fb28110c7ec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-09-05 04:14:02</sys_updated_on>
+        <target_scope display_value="Global">global</target_scope>
+    </sys_scope_script_access>
+</record_update>

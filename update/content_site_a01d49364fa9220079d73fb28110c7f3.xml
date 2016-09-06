@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="content_site">
+    <content_site action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <catalog_cartless>false</catalog_cartless>
+        <catalog_headless>false</catalog_headless>
+        <default_layout display_value="CMS 1 Column Iframe">7c89450a0a0005c63cd4585ffbedc5d7</default_layout>
+        <default_page display_value="Kentro">bc8f89364fa9220079d73fb28110c7ce</default_page>
+        <default_theme display_value="Default">d3b41f050a0005c6002ed8b65d6a92e2</default_theme>
+        <description>I don't know what I'm doing</description>
+        <gauge_page/>
+        <login_page/>
+        <name>Kentro App</name>
+        <search_page display_value="Kentro">bc8f89364fa9220079d73fb28110c7ce</search_page>
+        <sys_class_name>content_site</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-09-02 18:15:41</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a01d49364fa9220079d73fb28110c7f3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Kentro App</sys_name>
+        <sys_package display_value="Holacracy" source="x_ocios_holacron">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Holacracy">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_scope>
+        <sys_update_name>content_site_a01d49364fa9220079d73fb28110c7f3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-09-02 18:23:04</sys_updated_on>
+        <title>Test Site For Kentro</title>
+        <url_suffix>kentro</url_suffix>
+    </content_site>
+    <sys_translated_text action="delete_multiple" query="documentkey=a01d49364fa9220079d73fb28110c7f3"/>
+</record_update>

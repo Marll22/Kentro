@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="content_page" unload_date="2016-09-06 17:49:56">
+    <sys_portal action="delete_multiple" query="page=bc8f89364fa9220079d73fb28110c7ce">
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone0</dropzone>
+                <offset>0</offset>
+                <page display_value="Kentro Main Page">bc8f89364fa9220079d73fb28110c7ce</page>
+                <summary/>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2016-09-02 18:57:30</sys_created_on>
+                <sys_id>3ae8913a4fa9220079d73fb28110c76d</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2016-09-02 18:57:30</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2016-09-02 11:57:30">3ae8913a4fa9220079d73fb28110c76d</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-02 18:57:30</sys_created_on>
+                        <sys_id>3ee8913a4fa9220079d73fb28110c76d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-02 18:57:30</sys_updated_on>
+                        <value>com.glide.cms.RenderBlock</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 2016-09-02 11:57:30">3ae8913a4fa9220079d73fb28110c76d</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-02 18:57:30</sys_created_on>
+                        <sys_id>76e8913a4fa9220079d73fb28110c76e</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-02 18:57:30</sys_updated_on>
+                        <value>bc8f89364fa9220079d73fb28110c7ce</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2016-09-02 11:57:30">3ae8913a4fa9220079d73fb28110c76d</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-02 18:57:30</sys_created_on>
+                        <sys_id>7ae8913a4fa9220079d73fb28110c76d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-02 18:57:30</sys_updated_on>
+                        <value>c84399764fa9220079d73fb28110c7ac</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 2016-09-02 11:57:30">3ae8913a4fa9220079d73fb28110c76d</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-02 18:57:30</sys_created_on>
+                        <sys_id>b2e8913a4fa9220079d73fb28110c76e</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-02 18:57:30</sys_updated_on>
+                        <value>content_block_iframe</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2016-09-02 11:57:30">3ae8913a4fa9220079d73fb28110c76d</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-02 18:57:30</sys_created_on>
+                        <sys_id>fee8913a4fa9220079d73fb28110c76d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-02 18:57:30</sys_updated_on>
+                        <value>circlelist</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal>
+    <content_page action="INSERT_OR_UPDATE">
+        <content_site display_value="Kentro App">a01d49364fa9220079d73fb28110c7f3</content_site>
+        <content_theme display_value="Default">d3b41f050a0005c6002ed8b65d6a92e2</content_theme>
+        <description>I think...</description>
+        <frame_buster>false</frame_buster>
+        <layout display_value="CMS 2 Column">34036f300a0a0b7000b7ceb8ce23c6e8</layout>
+        <model_id/>
+        <model_table/>
+        <name>Kentro</name>
+        <order/>
+        <parent_page/>
+        <read_roles>public</read_roles>
+        <roles/>
+        <selectable>true</selectable>
+        <sys_class_name>content_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-09-02 18:20:02</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bc8f89364fa9220079d73fb28110c7ce</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>Kentro</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Holacracy" source="x_ocios_holacron">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Holacracy">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_scope>
+        <sys_update_name>content_page_bc8f89364fa9220079d73fb28110c7ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-09-02 18:57:30</sys_updated_on>
+        <title>Kentro Main Page</title>
+        <url_suffix>kentro</url_suffix>
+        <user/>
+        <view/>
+        <workflow_state>published</workflow_state>
+    </content_page>
+</record_update>
