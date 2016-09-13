@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="sys_policy" table="sys_script_include" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sys_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Read-only</label>
+            <language>en</language>
+            <name>sys_script_include</name>
+            <sequence>0</sequence>
+            <sys_created_by>justinb</sys_created_by>
+            <sys_created_on>2016-09-08 18:14:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4c98c0bc4f35220079d73fb28110c7ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>justinb</sys_updated_by>
+            <sys_updated_on>2016-09-08 18:14:17</sys_updated_on>
+            <value>read</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sys_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Protected</label>
+            <language>en</language>
+            <name>sys_script_include</name>
+            <sequence>1</sequence>
+            <sys_created_by>justinb</sys_created_by>
+            <sys_created_on>2016-09-08 18:14:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4498c0bc4f35220079d73fb28110c7ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>justinb</sys_updated_by>
+            <sys_updated_on>2016-09-08 18:14:17</sys_updated_on>
+            <value>protected</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>sys_policy</element>
+            <name>sys_script_include</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>justinb</sys_created_by>
+            <sys_created_on>2016-09-08 18:14:17</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>8098c0bc4f35220079d73fb28110c7ae</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>sys_policy</sys_name>
+            <sys_package display_value="Holacracy" source="x_ocios_holacron">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Holacracy">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_scope>
+            <sys_update_name>sys_choice_sys_script_include_sys_policy</sys_update_name>
+            <sys_updated_by>alexiasa</sys_updated_by>
+            <sys_updated_on>2016-09-12 21:46:57</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

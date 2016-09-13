@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Holacracy Importer</name>
+        <run_as display_value="Justin Burns">cae8712f4fa5620079d73fb28110c773</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2016-09-13 17:23:53</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[// __fileURL = https://watechtest.service-now.com/sysauto_script.do?sys_id=de0b6be16f5d9200dc7c034abb3ee461
+// __authentication = STORED
+/* jshint -W069 */
+
+gs.info("HOLACRON_START");
+
+//try {
+
+	// Set up a data structure containing the names of the REST messages, tables, "main" (name) column, primary key column,
+	// and a list of column name mappings to translate from glassfrog API to ServiceNow table structure
+	var services = [
+		{
+			"restID": "x_ocios_holacron.glassfrog_circles",
+			"tableID": "x_ocios_holacron_circle",
+			"mainColID": "name",
+			"pkey": "circles",
+			"cols": [
+				{ source: "name", target: "name"},
+				{ source: "id", target: "glassfrog_id"},
+				{ source: "strategy", target: "strategy"},
+			]
+		},
+		{
+			"restID": "x_ocios_holacron.glassfrog_people",
+			"tableID": "x_ocios_holacron_people",
+			"mainColID": "name",
+			"pkey": "people",
+			"cols": [
+				{ source: "name", target: "name"},
+				{ source: "email", target: "email"},
+				{ source: "id", target: "glassfrog_id"}
+			]
+		},
+		{
+			"restID": "x_ocios_holacron.glassfrog_roles",
+			"tableID": "x_ocios_holacron_role",
+			"mainColID": "name",
+			"pkey": "roles",
+			"cols": [
+				{ source: "id", target: "glassfrog_id"},
+				{ source: "name", target: "name"},
+				{ source: "purpose", target: "purpose"},
+				{ source: "elected_until", target: "elected_until"},
+				{ source: "circle", target: "circle", type: "reference"}
+			]
+		},
+	]; 
+
+
+    // For each of the tables defined above...
+	for (var serviceID in services) {
+		var svc = services[serviceID];
+
+		// Call glassfrog API
+	    var r = new sn_ws.RESTMessageV2(svc["restID"], 'get');
+	    var response = r.execute();
+	    var jsonString = response.getBody();
+	    var httpStatus = response.getStatusCode();
+	    var doc = new global.JSON().decode(jsonString);
+		
+		// Decode response, save circles as a separate variable (for lookup purposes)
+		var items = doc[svc["pkey"]];
+// 		var circles = doc["linked"]["circles"];
+			
+		// For each of the items in the glassfrog API (for the current table - we use PKEY to address this table)
+	    for (var i in items) {
+	        var item = items[i];
+
+			// Fetch or Create a new gliderecord in the given table
+			var rec = new GlideRecord(svc["tableID"]);
+			var hasRecord = rec.get("glassfrog_id", (item["id"] || "NULL").toString());						
+
+			// If new record, initialize and save it
+	        if (!hasRecord) {
+				rec.initialize();
+				rec.insert();			
+			}      
+
+			
+			
+			// For each of the columns defined for this table / datasource
+			var cols = svc["cols"];
+			for (var x in cols) {
+
+				// if we're processing a reference to a circle...
+				if (svc["cols"][x]["source"] == "circle") {
+
+// 					// Get circle id
+ 					var circleID = (item["links"]["circle"] || "NULL").toString();
+					
+					if (isNumber(circleID)) {
+					
+	// 					// Get record for this circle
+						var circle = getCircleByGlassfrogID(circleID);
+
+	// 					// set display value of linked circle in the role record
+						rec.circle = circle.sys_id; //.setDisplayValue(linkedCircle);
+					}
+			
+				// For all other records, just use the mapping defined to write to the correct column in service now
+				} else {
+					
+					rec[svc["cols"][x]["target"]] = (item[cols[x]["source"]] || "NULL").toString();
+				}
+				
+				if (svc["pkey"] == "roles") {
+					rec["expected_allocation"] = 1.00;
+				}
+			}
+			
+			
+			
+			
+			// Save
+			rec.update();
+			
+			
+			
+			if (svc["pkey"] == "roles") {
+
+				// for each person_id in related people list (from glassfrog API)
+				var linkTableName = 'x_ocios_holacron_m2m_peoples_roles';
+
+				for (var pidx in item["links"]["people"]) {
+
+					//gs.info("input: " + item["links"]["people"][pidx]);
+					
+					var myGfID = (item["links"]["people"][pidx] || "NULL").toString();
+					
+					var person = getPersonByGlassfrogID(myGfID);
+					var pid = person.sys_id;
+					
+					var rid = rec["sys_id"]; //item["sys_id"];
+// 					var alloc = rec["expected_allocation"];				
+					
+					var m2m_rec = new GlideRecord(linkTableName);
+					m2m_rec.addQuery('role', rid);
+					m2m_rec.addQuery('people', pid);
+					m2m_rec.query();
+
+					var hasLinkRecord = m2m_rec.next();
+
+					// If new record, initialize and save it
+					if (!hasLinkRecord) {
+						m2m_rec.initialize();
+						m2m_rec.insert();			
+						m2m_rec["people"] = pid;
+						m2m_rec["role"] = rid;
+						m2m_rec["actual_allocation"] = 100;
+						// Save the record
+						m2m_rec.update();
+					}					
+				}
+
+			}
+			
+			
+	    }
+	}
+
+//}
+// catch(ex) {
+//     var message = ex.getMessage();
+//     gs.error(message);
+// }
+
+function isNumber(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
+function getPersonByGlassfrogID(gfid) {
+	var person_rec = new GlideRecord("x_ocios_holacron_people");
+	person_rec.get("glassfrog_id", gfid);
+	return person_rec;
+}
+
+function getCircleByGlassfrogID(gfid) {
+	var circle_rec = new GlideRecord("x_ocios_holacron_circle");
+	circle_rec.get("glassfrog_id", gfid);
+	return circle_rec;
+}
+
+
+
+// Utility function to retrieve a circle's name by ID, so that we can create a reference
+function getCircleName(circleId)
+{
+	for (var c in circles) {
+		if (c.id == circleID)
+			return c.name;
+	}
+	return "NULL";		
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>justinb</sys_created_by>
+        <sys_created_on>2016-09-13 17:24:13</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>6efc655e4f3d620079d73fb28110c7d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Holacracy Importer</sys_name>
+        <sys_package display_value="Holacracy" source="x_ocios_holacron">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Holacracy">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_scope>
+        <sys_update_name>sysauto_script_6efc655e4f3d620079d73fb28110c7d1</sys_update_name>
+        <sys_updated_by>justinb</sys_updated_by>
+        <sys_updated_on>2016-09-13 17:24:13</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
