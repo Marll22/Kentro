@@ -2,23 +2,23 @@
 <record_update table="ua_table_licensing_config">
     <ua_table_licensing_config action="INSERT_OR_UPDATE">
         <is_fulfillment>false</is_fulfillment>
-        <name>x_ocios_holacron_domain</name>
-        <owner_condition table="x_ocios_holacron_domain">sys_created_by=javascript:gs.getUserName()^EQ<item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserName()"/>
+        <name>x_ocios_holacron_metric</name>
+        <owner_condition table="x_ocios_holacron_metric">sys_created_by=javascript:gs.getUserName()^EQ<item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserName()"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </owner_condition>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-08-31 21:04:25</sys_created_on>
+        <sys_created_on>2016-08-31 21:04:27</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>5dfe27864f61220079d73fb28110c7d6</sys_id>
+        <sys_id>6357433c4fc2260079d73fb28110c7dc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_ocios_holacron_domain</sys_name>
+        <sys_name>x_ocios_holacron_metric</sys_name>
         <sys_package display_value="Holacracy" source="x_ocios_holacron">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Holacracy">f4db3e2d6f1d9200dc7c034abb3ee49c</sys_scope>
-        <sys_update_name>ua_table_licensing_config_5dfe27864f61220079d73fb28110c7d6</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_6357433c4fc2260079d73fb28110c7dc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-08-31 21:04:25</sys_updated_on>
+        <sys_updated_on>2016-08-31 21:04:27</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>

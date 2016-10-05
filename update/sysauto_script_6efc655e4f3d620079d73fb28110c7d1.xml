@@ -209,7 +209,7 @@ function getCircleName(circleId)
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>justinb</sys_created_by>
         <sys_created_on>2016-09-13 17:24:13</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>6efc655e4f3d620079d73fb28110c7d1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Holacracy Importer</sys_name>

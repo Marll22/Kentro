@@ -15,7 +15,7 @@
         <sys_class_name>content_site</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-09-02 18:15:41</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a01d49364fa9220079d73fb28110c7f3</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Kentro App</sys_name>

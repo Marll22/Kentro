@@ -15,7 +15,7 @@
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-09-03 04:29:01</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>36bbd3fa4f2d220079d73fb28110c7d1</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name/>

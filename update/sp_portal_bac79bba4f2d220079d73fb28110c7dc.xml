@@ -39,7 +39,7 @@ $text-muted: #979797;
         <sys_class_name>sp_portal</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-09-03 04:12:37</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>bac79bba4f2d220079d73fb28110c7dc</sys_id>
         <sys_mod_count>6</sys_mod_count>
         <sys_name>Face Melting Portal of Awesomeness</sys_name>
